@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  background-color: lightcyan;
+}
+
+.main_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #f5fbf5, #d6d7d1, #b9b5af, #9a9490, #7c7473);
+}
+
+.main_container .subcontainer {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.main_container .subcontainer input[type="number"] {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 250px;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 300ms ease-in-out;
+}
+
+.main_container .subcontainer input[type="number"]::placeholder {
+  font-weight: lighter;
+}
+
+.main_container .subcontainer input[type="number"]:focus {
+  transform: scaleX(1.1);
+  outline: 2px solid #30dc12;
+}
+
+@media screen and (max-width: 500px) {
+  .main_container .subcontainer input[type="number"] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main_container .subcontainer input[type="number"] {
+    font-size: 1rem;
+    margin: 0;
+    padding: 8px;
+  }
+
+  .main_container .subcontainer input[type="number"]:focus {
+    transform: none;
+  }
+}
+
+.main_container .subcontainer label {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 300px) {
+  .main_container .subcontainer label {
+    font-size: 1.1rem;
+  }
+}
+
+.main_container h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 300px) {
+  .main_container h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1216px) {
+  .main_container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .main_container {
+    width: 90%;
+  }
+}
